@@ -1,0 +1,83 @@
+﻿<h1 id="encrypt">Encrypt!</h1>
+
+<p>Hey! I wrote a project for encrypting a text into bitmap file that human eye cannot recognize that. this program using a cool algorithm that showed below. </p>
+
+
+
+<h2 id="title"><img src="https://github.com/gsoosk/Encrypt-Bitmap/raw/master/1.png" alt="over view" title=""></h2>
+
+
+
+<h2 id="note">Note:</h2>
+
+<p>it was one of my first project in c++ and I didn’t use classes and object oriented at all! </p>
+
+<p>it has not make file eighter and it just including one file.</p>
+
+<hr>
+
+
+
+<h2 id="algorithm">Algorithm</h2>
+
+<p><strong>encrypting :</strong>  <br>
+1. read bitmap <br>
+2. seperate picture into 8*8 squares and calculate variance of any RGB colors <br>
+3. get message from user <br>
+4. get key from user and make a random string using that key belong seed  <br>
+5. for every square :</p>
+
+<ol>
+<li>choose one square using random seed</li>
+<li>change LSB of pixel that choosed</li>
+<li>repeat 5 until message ends</li>
+</ol>
+
+<p><img src="https://github.com/gsoosk/Encrypt-Bitmap/raw/master/2.png" alt="enter image description here" title=""> <br>
+and save bitmap</p>
+
+<p><strong>decrypting :</strong> <br>
+1. read bitmap <br>
+2. seperate picture into 8*8 squares and calculate variance of any RGB colors <br>
+3. get key from user and make a random string using that key belong seed  <br>
+4. . for every square :</p>
+
+<ol>
+<li>choose one square using random seed</li>
+<li>read LSB and adding to string </li>
+<li>repeat 4 until seeing \n</li>
+</ol>
+
+<p>and save message into disk.</p>
+
+<hr>
+
+
+
+<h2 id="how-to-use">How to use?</h2>
+
+<h4 id="input-and-output"><i class="icon-pencil"></i> Input and Output</h4>
+
+<p>first line encrypt <br>
+second line bitmap file name <br>
+third line is your key <br>
+forth line Is your message</p>
+
+<blockquote>
+  <p>encrypt <br>
+  image.bmp <br>
+  2132 <br>
+  I like pizza !</p>
+</blockquote>
+
+<p>first line decrypt for decrypting <br>
+second line bitmap file name <br>
+third line is your key</p>
+
+<blockquote>
+  <p>decrypt <br>
+  coded-image.bmp <br>
+  21211</p>
+</blockquote>
+
+<p><strong><em>Note :</em></strong> bitmap should be in program repository.</p>
