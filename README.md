@@ -21,9 +21,12 @@ it has not make file eighter and it just including one file.
 3. get message from user
 4. get key from user and make a random string using that key belong seed 
 5. for every square :
-    a. choose one square using random seed
-    b. change LSB of pixel that choosed
-    c. repeat 5 until message ends
+
+a. choose one square using random seed
+
+b. change LSB of pixel that choosed
+
+c. repeat 5 until message ends
 
 ![enter image description here](https://github.com/gsoosk/Encrypt-Bitmap/raw/master/2.png)
 and save bitmap
@@ -34,9 +37,12 @@ and save bitmap
 2. seperate picture into 8*8 squares and calculate variance of any RGB colors
 3. get key from user and make a random string using that key belong seed 
 4. . for every square :
-    a. choose one square using random seed
-    b. read LSB and adding to string 
-    c. repeat 4 until seeing \n
+    
+a. choose one square using random seed
+
+b. read LSB and adding to string 
+
+c. repeat 4 until seeing \n
 
 and save message into disk.
 
