@@ -24,7 +24,9 @@ it has not make file eighter and it just including one file.
 5. for every square :
     
 a. choose one square using random seed
+
 b. change LSB of pixel that choosed
+
 c. repeat 5 until message ends
 
 ![enter image description here](https://github.com/gsoosk/Encrypt-Bitmap/raw/master/2.png)
@@ -38,7 +40,9 @@ c. repeat 5 until message ends
 4. . for every square :
 
 a. choose one square using random seed
-b. read LSB and adding to string 
+
+b. read LSB and adding to string
+
 c. repeat 4 until seeing \n
 
 and save message into disk.
@@ -56,18 +60,19 @@ first line encrypt
 second line bitmap file name
 third line is your key
 forth line Is your message
-
-> encrypt
-> image.bmp
-> 2132
-> I like pizza !
+```
+encrypt
+image.bmp
+2132
+I like pizza !
+```
 
 first line decrypt for decrypting
 second line bitmap file name
 third line is your key
-
->decrypt
->coded-image.bmp
->21211
-
+```
+decrypt
+coded-image.bmp
+21211
+```
 ***Note :*** bitmap should be in program repository.
