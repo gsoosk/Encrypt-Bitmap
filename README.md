@@ -22,11 +22,11 @@ it has not make file eighter and it just including one file.
 4. get key from user and make a random string using that key belong seed 
 5. for every square :
 
-6. choose one square using random seed
-7. change LSB of pixel that choosed
-8. repeat 5 until message ends
+  a. choose one square using random seed
+  b. change LSB of pixel that choosed
+  c. repeat 5 until message ends
 
-![enter image description here](https://github.com/gsoosk/Encrypt-Bitmap/raw/master/2.png)
+![Hello](https://github.com/gsoosk/Encrypt-Bitmap/raw/master/2.png)
 and save bitmap
 
 
@@ -36,9 +36,9 @@ and save bitmap
 3. get key from user and make a random string using that key belong seed 
 4. . for every square :
 
-5. choose one square using random seed
-6. read LSB and adding to string 
-7. repeat 4 until seeing \n
+  a. choose one square using random seed
+  b. read LSB and adding to string 
+  c. repeat 4 until seeing \n
 
 and save message into disk.
 
@@ -57,8 +57,11 @@ third line is your key
 forth line Is your message
 
 > encrypt
+
 > image.bmp
+
 > 2132
+
 > I like pizza !
 
 first line decrypt for decrypting
