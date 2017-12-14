@@ -1,78 +1,30 @@
-Encrypt!
+Planets Vs. Zombies
 ===================
 
 
-Hey! I wrote a project for encrypting a text into bitmap file that human eye cannot recognize that. this program using a cool algorithm that showed below. 
+Hey! I wrote a game like planet vs zombies but more **crapy**
 
-![enter image description here](https://github.com/gsoosk/Encrypt-Bitmap/raw/master/1.png)
+
 
 ----------
 ## Note: ##
-it was one of my first project in c++ and I didn't use classes and object oriented at all! 
+it was one of my first projects in c++ and i dont use make file at all !
 
-it has not make file eighter and it just including one file.
+and 
+
+You should install SDL library first.
+https://wiki.libsdl.org/Installation
+
+
 
 
 ----------
 
-## Algorithm ##
-**encrypting :** 
-1. read bitmap
-2. seperate picture into 8*8 squares and calculate variance of any RGB colors
-3. get message from user
-4. get key from user and make a random string using that key belong seed 
-5. for every square :
-    
-a. choose one square using random seed
-
-b. change LSB of pixel that choosed
-
-c. repeat 5 until message ends
-
-![enter image description here](https://github.com/gsoosk/Encrypt-Bitmap/raw/master/2.png)
-
-
-
-**decrypting :**
-1. read bitmap
-2. seperate picture into 8*8 squares and calculate variance of any RGB colors
-3. get key from user and make a random string using that key belong seed 
-4. . for every square :
-
-a. choose one square using random seed
-
-b. read LSB and adding to string
-
-c. repeat 4 until seeing \n
-
-and save message into disk.
-
-
------------
-
-How to use?
--------------
-
-
-#### <i class="icon-pencil"></i> Input and Output
-
-first line encrypt
-second line bitmap file name
-third line is your key
-forth line Is your message
+## How to use ? ##
+in Main repository run this command :
 ```
-encrypt
-image.bmp
-2132
-I like pizza !
+g++ Main.cpp && a.out
 ```
+----------
 
-first line decrypt for decrypting
-second line bitmap file name
-third line is your key
-```
-decrypt
-coded-image.bmp
-21211
-```
-***Note :*** bitmap should be in program repository.
+there is a persian documantaion pdf in repository. Actually i'm not in mood of writing documntaion for it now. you can use google translate to undrestand that :)))
