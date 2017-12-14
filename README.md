@@ -22,7 +22,7 @@ it has not make file eighter and it just including one file.
 4. get key from user and make a random string using that key belong seed 
 5. for every square :
 
-  a. choose one square using random seed
+  a. choose one square using random seed \n
   b. change LSB of pixel that choosed
   c. repeat 5 until message ends
 
